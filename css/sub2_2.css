@@ -1,0 +1,148 @@
+/* 서브 비주얼 영역 */
+#wrap .sub_visual{width: 100%; height: 200px; position: relative;
+background: url(../images/sub2_visual.png) center bottom no-repeat; background-size: cover;}
+#wrap .sub_visual h3{font-size: 1.5rem; font-weight: 500; color: #fff; text-align: center;
+  padding-top: 110px;}
+
+
+/* 서브 네비 */
+#wrap .subNav{border-bottom: 1px solid #ccc;}
+#wrap .subNav ul{overflow: hidden;}
+#wrap .subNav li{float: left; width: 25%; text-align: center; position: relative;}
+#wrap .subNav li::after{content: ''; display: block; position: absolute; width: 1px;
+  height: 30px; right: 0; top: 16px; background: #ccc;}
+#wrap .subNav li:last-child::after{content: ''; display: none;}
+#wrap .subNav li a{display: block; padding: 20px 0; font-size: 1.1rem;}
+#wrap .subNav li a.current{color: #064f9e; font-weight: 700; position: relative;}
+#wrap .subNav li a.current::after{content: ''; display: block; width: 100%; height: 2px;
+  background: #064f9e; position: absolute; left: 0; bottom: 0;}
+
+
+/* 본문 영역 */
+          /* 본문 타이틀 */
+#content .title_area h2{font-size: 2rem; font-weight: 700; text-align: center;
+  margin: 50px 0 15px; position: relative;}
+#content .title_area h2::after{content: ''; display: block; position: absolute;
+  background: #064f9e; width: 1px; height: 25px; left: 50%; bottom: -75px;}
+#content .title_area p{text-align: center; font-size: 1rem; margin-bottom: 50px; color: #064f9e;}
+#content .title_area p:last-child{margin: 0 35px; font-size: 1.125rem; color: #333;}
+#content .title_area p span{color: #064f9e; font-weight: 500;}
+
+          /* 본문 내용 */
+@keyframes rotate{
+  0%{transform: rotate(0);}
+  100%{transform: rotate(360deg);}
+}
+
+#content .content_area1{margin: 70px 0 55px;}          
+#content .content_area1 h3{font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; 
+  position: relative; margin-left: 30px;}
+#content .content_area1 h3::before{content: ''; display: block; position: absolute; width: 30px; height: 30px;
+  left: 80px; bottom: 0px; z-index: -1; border: 2px dotted #b1d3ff; border-radius: 50%; animation: rotate 10s linear infinite;}
+
+#content .content_area1 .mySwiper{margin: 0 30px;}
+
+#content .content_area1 li{position: relative;}
+#content .content_area1 li div{width: 100%; height: 220px; background-image: url(../images/good2_1.jpg);
+  background-position: center; background-repeat: no-repeat; background-size: cover;}
+#content .content_area1 li:nth-of-type(2) div{background-image: url(../images/good2_2.jpg);}
+#content .content_area1 li:nth-of-type(3) div{background-image: url(../images/good2_3.jpg);}
+#content .content_area1 li:nth-of-type(4) div{background-image: url(../images/good2_4.jpg);}
+
+#content .content_area1 li dl{position: absolute; left: 0; top: 0; padding: 50px 0 70px;
+  text-align: center; line-height: 2; width: 100%; background: rgba(0, 0, 0, .5);}
+#content .content_area1 li dt{font-size: 1.3rem; font-weight: 700; color: #b1d3ff;}
+#content .content_area1 li dd{font-size: 1.125rem; color: #fff;}
+
+.swiper-pagination-bullet{background: rgba(255, 255, 255, .5);}
+.swiper-pagination-bullet-active{background: #fff;}
+
+
+
+#content .content_area2{margin: 120px 0 50px 0;}          
+#content .content_area2 h3{font-size: 1.5rem; font-weight: 700; 
+  position: relative; margin-left: 30px;}
+#content .content_area2 h3::before{content: ''; display: block; position: absolute; width: 190px; height: 30px;
+  left: -40px; bottom: 0px; z-index: -1; background: #b1d3ff; transform: skew(15deg);}
+
+#content .content_area2 .info_img{background: url(../images/carinfo.png) center no-repeat;
+  width: 100%; height: 200px; background-size: cover; margin-top: 20px;}
+#content .content_area2 .info_txt{height: 400px; overflow: scroll; margin-top: 20px;
+  background: url(../images/bg_automotive.png) center no-repeat; background-size: cover;}
+#content .content_area2 .info_txt span{color: #064f9e; font-size: 1.1rem; font-weight: 500;
+  display: block; padding: 0 30px; }
+#content .content_area2 p{padding: 5px 30px; 
+   font-size: 1.125rem; text-align: justify; line-height: 1.7;}
+
+
+  
+#content .content_area3 h3{font-size: 1.7rem; font-weight: 700; margin-top: 70px;
+position: relative; text-align: center; -webkit-text-stroke: 1px #4f84c9; color: #fff;}
+#content .content_area3>ul{margin: 30px 30px 50px;}
+#content .content_area3 li.app_box{width: 100%; height: 130px; background: #4f84c9;
+  text-align: center; color: #fff; font-size: 1.2rem; margin-bottom: 20px;
+  border: 1px solid #4f84c9;}
+#content .content_area3 li.app_box div{height: 80px; padding-top: 30px; box-sizing: border-box;
+  letter-spacing: .2rem; padding-left: 50px; }
+#content .content_area3 li.app_box:nth-child(1) div{background: url(../images/innovation.png) 10% 50% no-repeat; background-size: 70px;}
+#content .content_area3 li.app_box:nth-child(2) div{background: url(../images/product.png) 10% 50% no-repeat; background-size: 70px;}
+#content .content_area3 li.app_box:nth-child(3) div{background: url(../images/application.png) 10% 50% no-repeat; background-size: 70px;}
+#content .content_area3 li.app_box:nth-child(4) div{background: url(../images/partnership.png) 10% 50% no-repeat; background-size: 70px;}
+#content .content_area3 li.app_box a{display: block; background: #fff; height: 50px; padding-top: 13px;
+  box-sizing: border-box;}
+
+/* 팝업 */
+#content .content_area3 .pop_btn{
+  font-size: 3rem;
+  text-align: center;
+  /* z-index: 115; */
+  overflow: hidden;
+  /* display: none; */
+}
+#content .content_area3 .pop_btn a{
+  display: block;
+  width: 50%;
+  padding: 30px 0;
+  color: #eee;
+  float: left;
+}
+#content .content_area3 .pop_btn a:active{color: #999;}
+/* #content .content_area3 .pop_btn .next{} */
+
+#content .content_area3 .popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 110;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  display: none;
+}
+
+#content .content_area3 .popup img{width: 100%; margin-top: 70px;}
+/* #content .content_area3 .popup dl{padding: 15px;}   */
+#content .content_area3 .popup dt{font-size: 1.5rem; font-weight: 700; margin: 20px 0 10px;
+  padding: 0 15px;}
+#content .content_area3 .popup dd{font-size: 1rem; line-height: 2; text-align: justify;
+  padding: 30px 15px; background: rgba(79, 132, 201, .1);}
+
+#content .content_area3 .popup ul{padding: 0 15px;}
+#content .content_area3 .popup ul li{width: 100%; font-size: 1rem; padding-top: 30px;}
+#content .content_area3 .popup ul li span{font-weight: 700; color: #064f9e; display: block;
+  font-size: 1.1rem;margin-bottom: 10px;}
+
+#content .content_area3 .popup .close_btn{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+}
+
+#content .content_area3 .popup .close_btn span{
+  color: #064f9e; 
+  font-size: 2.5rem; 
+  font-weight: 500;
+}

@@ -1,0 +1,57 @@
+/* 서브 비주얼 영역 */
+#wrap .sub_visual{width: 100%; height: 200px; position: relative;
+background: url(../images/sub4_visual.png) center bottom no-repeat; background-size: cover;}
+#wrap .sub_visual h3{font-size: 1.5rem; font-weight: 500; color: #fff; text-align: center;
+  padding-top: 110px;}
+
+
+/* 서브 네비 */
+#wrap .subNav{border-bottom: 1px solid #ccc;}
+#wrap .subNav ul{overflow: hidden;}
+#wrap .subNav li{float: left; width: 50%; text-align: center; position: relative;}
+#wrap .subNav li::after{content: ''; display: block; position: absolute; width: 1px;
+  height: 30px; right: 0; top: 16px; background: #ccc;}
+#wrap .subNav li:last-child::after{content: ''; display: none;}
+#wrap .subNav li a{display: block; padding: 20px 0; font-size: 1.1rem;}
+#wrap .subNav li a.current{color: #064f9e; font-weight: 700; position: relative;}
+#wrap .subNav li a.current::after{content: ''; display: block; width: 100%; height: 2px;
+  background: #064f9e; position: absolute; left: 0; bottom: 0;}
+
+
+/* 본문 영역 */
+          /* 본문 타이틀 */
+#content .title_area h2{font-size: 2rem; font-weight: 700; text-align: center;
+  margin: 50px 0 15px; position: relative;}
+#content .title_area h2::after{content: ''; display: block; position: absolute;
+  background: #064f9e; width: 1px; height: 25px; left: 50%; bottom: -75px;}
+#content .title_area p{text-align: center; font-size: 1rem; margin-bottom: 50px; color: #064f9e;}
+#content .title_area p:last-child{margin: 0 35px; font-size: 1.125rem; color: #333;}
+#content .title_area p span{color: #064f9e; font-weight: 500;}
+
+
+          /* 본문 내용 */
+/* #content h3{font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; 
+  position: relative; margin-left: 15px;} */
+
+#content .mail_content{margin-top: 70px;}
+#content div.control-group label{display: block; font-size: 1.1em; font-weight: 500; width: 80%; margin: 15px 10%; }
+#content div.control-group label::after{content: '*'; color: red;}
+#content div.control-group input{width: 80%; margin: 0 10%;  border-radius: 5px; border: 1px solid #ddd; 
+  transform: translateX(-7.5px); padding: 20px 0 20px 15px; font-size: 1rem; }
+#content div.control-group textarea{width: 80%; margin: 0 10%; border-radius: 5px;
+  border: 1px solid #ddd; font-family: 'Noto Sans KR','sans-serif'; height: 250px; resize: none;
+  font-size: 1rem; padding: 20px 0 0 15px;  transform: translateX(-7.5px);}
+
+#content div.control-group input:focus{outline-color: #064f9e;}
+#content div.control-group textarea:focus{outline-color: #064f9e;}
+
+
+#content .content_area .inquiry button{background: #064f9e; border: none; color: #fff;
+    border-radius: 3px; padding: 10px 20px; position: relative; left: 50%; transform: translateX(-50%);
+  font-weight: 500; margin: 30px 0 100px 0;}
+
+
+#content .content_area .inquiry .precautions{width: 70%; margin-left: 15%; text-align: justify;
+    margin-bottom: 100px;}
+#content .content_area .inquiry .precautions dt{font-weight: 500; margin-bottom: 10px;}
+#content .content_area .inquiry .precautions dd{margin-bottom: 8px; line-height: 1.7em;}

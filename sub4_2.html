@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>고객지원-문의하기</title>
+
+<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+<link rel="apple-touch-startup-image" href="./startup.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/sub4_2.css">
+
+<script src="./js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/22db827832.js" crossorigin="anonymous"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ 
+</head>
+
+<body>
+  <div id="skipNav">
+     <a href="#content">본문바로가기</a>
+     <a href="#gnb">네비게이션바로가기</a>
+  </div>
+ 
+  <div id="wrap">
+    <header id="headerArea">
+      <div class="header_top">
+        <h1><a href="./index.html">삼성SDI 로고</a></h1>
+        <a class="menu_open" href="#">
+          <span>메뉴열기</span>
+        </a>
+      </div>
+      <nav id="gnb">
+          <h2 class="hidden">글로벌네비게이션영역</h2>
+
+          <ul class="rightmenu">
+            <li class="depth1">
+              <h3><a href="#">회사소개</a></h3>
+              <ul>
+                <li><a href="./sub1_1.html">기업소개</a></li>
+                <li><a href="./sub1_2.html">CEO 인사말</a></li>
+                <li><a href="./sub1_3.html">오시는 길</a></li>
+              </ul>
+            </li>
+            <li class="depth1">
+              <h3><a href="#">사업분야</a></h3>
+              <ul>
+                <li><a href="./sub2_1.html">소형배터리</a></li>
+                <li><a href="./sub2_2.html">자동차배터리</a></li>
+                <li><a href="./sub2_3.html">ESS</a></li>
+                <li><a href="./sub2_4.html">전자재료</a></li>
+              </ul>
+            </li>
+            <li class="depth1">
+              <h3><a href="#">정도경영</a></h3>
+              <ul>
+                <li><a href="./sub3_1.html">윤리경영</a></li>
+                <li><a href="./sub3_2.html">사회공헌</a></li>
+              </ul>
+            </li>
+            <li class="depth1">
+              <h3><a href="#">고객지원</a></h3>
+              <ul>
+                <li><a href="./sub4_1.html">FAQ</a></li>
+                <li><a href="./sub4_2.html">문의하기</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="login">
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./member_check.html">회원가입</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div class="sub_visual visual">
+      <h3>고객지원</h3>
+    </div>
+
+    <div class="subNav">
+      <ul>
+        <li><a href="./sub4_1.html">FAQ</a></li>
+        <li><a class="current" href="./sub4_2.html">문의하기</a></li>
+      </ul>
+    </div>
+
+    <article id="content">
+        <div class="title_area">
+          <h2>문의하기</h2> 
+          <p>CUSTOMER INQUIRY</p>
+          <p>문의사항에 대하여 조속히 검토하여 <span>회신</span> 드리겠습니다.</p>
+        </div> 
+
+        <div class="content_area">
+          <section class="inquiry">
+            <h3 class="hidden">삼성SDI 문의하기</h3>
+            <div class="mail_content">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="name">이름</label>
+                            <input type="text" class="form-control" placeholder="이름을 입력하세요" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="email">이메일</label>
+                            <input type="email" class="form-control" placeholder="이메일을 입력하세요" id="email" required data-validation-required-message="Please enter your email address.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="phone">연락처</label>
+                            <input type="tel" class="form-control" placeholder="연락처를 입력하세요" id="phone" required data-validation-required-message="Please enter your phone number.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="message">내용</label>
+                            <textarea rows="5" class="form-control" placeholder="내용을 입력하세요" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12 send">
+                            <button type="submit" class="btn btn-success btn-lg">문의 전송하기</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <dl class="precautions">
+                <dt>※아이디어 제안에 대한 정책</dt>
+                <dd>삼성SDI 및 삼성SDI 임직원은 당사가 공식적으로 요청하지 않았음에도 불구하고 여러분께서 일방적으로 당사에 제출하는 아이디어나 제안 등을 수령하거나 검토하지 않습니다.</dd>
+                <dd>이는 제출하신 내용이 당사 내부적으로 개발한 제품, 기술, 서비스와 유사할 경우 발생할 수 있는 오해와 분쟁을 방지하고 나아가 여러분의 창의적인 아이디어를 적극 보호하기 위함입니다.</dd>
+                <dd>이러한 취지를 이해하여 주시고 아이디어나 콘셉트(Concept)같은 제안이 당사에 제출되지 않도록 하여 주시기 바랍니다.</dd>
+            </dl>
+          </section>
+        </div>
+        
+    </article>
+
+    <footer id="footerArea">
+      <div class="footer_inner">
+        <div class="top_move">
+          <a href="#">맨위로</a>
+        </div>
+        <div class="sns">
+          <img src="./images/flogox2.png" alt="삼성SDI 하단로고">
+          <ul>
+            <li>
+                <a href="https://www.facebook.com/samsungsdi" target="_blank" title="삼성SDI 페이스북 새창으로 열림">페이스북</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/sdiin" target="_blank" title="삼성SDI 트위터 새창으로 열림">트위터</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/user/SDISamsung" target="_blank" title="삼성SDI 유튜브 새창으로 열림">유튜브</a>
+            </li>
+            <li>
+                <a href="http://blog.naver.com/sdibattery" target="_blank" title="삼성SDI 네이버밴드 새창으로 열림">네이버밴드</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="info">
+          <address>
+            <span>㈜ SAMSUNG SDI &nbsp; &vert; &nbsp; 대표이사 사장 최윤호</span>
+            <span>주소 &colon; 경기도 용인시 기흥구 공세로 150-20 [17084]</span>
+          </address>
+          <p>&copy; 2016 SAMSUNG SDI CO.,LTD. ALL RIGHT RESERVED.</p>
+        </div>
+        <div class="link">
+          <ul class="agree">
+              <li>
+                  <a href="#">이용약관</a>
+              </li>
+              <li>
+                  <a href="#">개인정보처리방침</a>
+              </li>
+              <li>
+                  <a href="#">이메일무단수집거부</a>
+              </li>
+          </ul>
+          <ul class="lang">
+              <li><a href="#">KR.</a></li>
+              <li><a href="#">EN.</a></li>
+              <li><a href="#">CN.</a></li>
+          </ul>
+        </div>
+        <div class="family">
+          <a href="#" class="site_open">Family Site
+             <span><i class="fa-solid fa-chevron-up"></i></span>
+          </a>
+          <ul class="fList">
+            <li><a href="https://www.samsungcnt.com/index.do" target="_blank" title="삼성물산 사이트 새창에 열림">삼성물산</a></li>
+            <li><a href="https://www.samsung.com/sec/" target="_blank" title="삼성전자 사이트 새창에 열림">삼성전자</a></li>
+            <li><a href="https://www.samsungsds.com/kr/index.html" target="_blank" title="삼성SDS 사이트 새창에 열림">삼성SDS</a></li>
+            <li><a href="https://www.samsunglife.com/" target="_blank" title="삼성생명 사이트 새창에 열림">삼성생명</a></li>
+            <li><a href="https://www.samsungfire.com/?main_area=PC_H1_0" target="_blank" title="삼성화재 사이트 새창에 열림">삼성화재</a></li>
+            <li><a href="https://www.samsungcard.com/personal/main/UHPPCO0101M0.jsp" target="_blank" title="삼성카드 사이트 새창에 열림">삼성카드</a></li>
+            <li><a href="https://www.samsungpop.com/" target="_blank" title="삼성증권 사이트 새창에 열림">삼성증권</a></li>
+            <li><a href="http://www.samsungshi.com/kor/default.aspx" target="_blank" title="섬성중공업 사이트 새창에 열림">삼성중공업</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+ <script src="./js/jquery-1.12.4.min.js"></script>
+ <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="./js/nav.js"></script>
+
+ <script src="./js/bootstrap.min.js"></script>
+ <script src="./js/contact_me.js"></script>
+ <script src="./js/jqBootstrapValidation.js"></script>
+ 
+ 
+</body>
+</html>

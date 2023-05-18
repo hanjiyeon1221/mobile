@@ -1,0 +1,23 @@
+{
+  "name": "안녕하세요! 삼성SDI입니다",
+  "short_name": "삼성SDI",
+  "description": "삼성SDI 앱에 대한 간단한 설명 글",
+  "scope": ".",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "images/icons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

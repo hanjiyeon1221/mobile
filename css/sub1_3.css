@@ -1,0 +1,77 @@
+/* 서브 비주얼 영역 */
+#wrap .sub_visual{width: 100%; height: 200px; position: relative;
+background: url(../images/sub1_visual.png) center bottom no-repeat; background-size: cover;}
+#wrap .sub_visual h3{font-size: 1.5rem; font-weight: 500; color: #fff; text-align: center;
+  padding-top: 110px;}
+
+
+/* 서브 네비 */
+#wrap .subNav{border-bottom: 1px solid #ccc;}
+#wrap .subNav ul{overflow: hidden;}
+#wrap .subNav li{float: left; width: 33.333%; text-align: center; position: relative;}
+#wrap .subNav li::after{content: ''; display: block; position: absolute; width: 1px;
+  height: 30px; right: 0; top: 16px; background: #ccc;}
+#wrap .subNav li:last-child::after{content: ''; display: none;}
+#wrap .subNav li a{display: block; padding: 20px 0; font-size: 1.1rem;}
+#wrap .subNav li a.current{color: #064f9e; font-weight: 700; position: relative;}
+#wrap .subNav li a.current::after{content: ''; display: block; width: 100%; height: 2px;
+  background: #064f9e; position: absolute; left: 0; bottom: 0;}
+
+
+/* 본문 영역 */
+          /* 본문 타이틀 */
+#content .title_area h2{font-size: 2rem; font-weight: 700; text-align: center;
+  margin: 50px 0 15px; position: relative;}
+#content .title_area h2::after{content: ''; display: block; position: absolute;
+  background: #064f9e; width: 1px; height: 25px; left: 50%; bottom: -75px;}
+#content .title_area p{text-align: center; font-size: 1rem; margin-bottom: 50px;}
+#content .title_area p:last-child{margin: 0 35px; font-size: 1.125rem;}
+#content .title_area p span{color: #064f9e; font-weight: 500;}
+
+          /* 본문 내용 */
+#content .content_area1{margin: 70px 0 55px;}
+#content .content_area1 h3{font-size: 1.43rem; font-weight: 700; margin-bottom: 10px; 
+  margin-left: 20px;}
+#content .content_area1 .tab_map{overflow: hidden; margin-bottom: 30px;}
+#content .content_area1 .tab_map li{width: 33.333%; float: left; text-align: center;
+  border: 1px solid #2a3da6; box-sizing: border-box; border-right-width: 0;}
+#content .content_area1 .tab_map li:last-child{float: right; border-right-width: 1px;}
+#content .content_area1 .tab_map li a{font-size: 1.1rem; padding: 20px 0;
+  letter-spacing: 2px; display: block;}
+#content .content_area1 .tab_map a.current{background: #e3e9fe; color: #064f9e; font-weight: 500;}
+#content .map #map_content1,.map #map_content2, .map #map_content3{
+  width: 100%; height: 350px; margin-bottom: 30px;}
+
+#content div .location li{font-size: 1rem; margin-bottom: 30px;
+  position: relative; padding: 20px;}
+#content div .location li.bus{margin-bottom: 55px;}
+#content div .location li::after{content: ''; display: block; position: absolute;
+    left: 0; top: 0px; width: 100%; height: 1px;  background: #e3e9fe ;}
+#content div .location li span{font-size: 1.2rem; font-weight: 700; display: block;
+  margin-bottom: 20px;}
+
+#content div .adress{margin-bottom: 20px;}    
+#content div .adress li{margin-bottom: 0; position: relative;}
+#content div .adress li::after{content: ''; display: none;}
+
+#content div .subway p{position: relative; left: 20px; padding: 0 20px;}    
+#content div .subway p::before{content: '수인분당'; display: block; position: absolute;
+    top: -10px; left: -30px; background: rgba(255, 230, 0, 1); border-radius: 50%; text-align: center;
+    font-size: .5rem; padding: 3px; color: #fff; width: 37px; height: 37px; line-height: 37px;}
+
+#content div .bus p{position: relative; left: 20px; margin: 20px 0; padding: 0 20px}    
+#content div .bus p:nth-of-type(1)::before{content: '탑승'; display: inline-block; position: absolute;
+    top: -5px; left: -30px; background: #ededed; border-radius: 5px;
+    font-size: 0.6rem; font-weight: 300; padding: 0 10px; line-height: 32px;}
+#content div .bus p:nth-of-type(2)::before{content: '마을'; display: inline-block; position: absolute;
+    top: -5px; left: -30px; background: #4AB44A; border-radius: 5px;
+    font-size: 0.6rem; font-weight: 300; padding: 0 10px; color: #fff; line-height: 32px;}
+#content .map2 .bus p:nth-of-type(2)::before{content: '일반'; background: #1B95A8;}
+
+#content .map2 .subway p::before{content:'1'; width: 30px; height: 30px; font-size: 0.8em;
+    text-align: center; background: #2A1F9C; line-height: 30px;}
+
+#content .map3 .subway p{left: 20px; padding-left: 30px;}
+#content .map3 .subway p::before{content: '무궁화'; text-align: center; background: #FF6600;
+    border-radius: 5px; padding: 0 5px; font-size: 0.8rem; font-weight: 300; line-height: 37px;}
+
